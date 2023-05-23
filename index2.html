@@ -1,0 +1,192 @@
+<html>
+<head>
+<title>Form Validation</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  *{
+    margin:0;
+	padding:0;
+	box-sizing:border-box;
+	}
+    body{
+	  display:flex;
+	  align-items:center;
+	  justify-content:center;
+	  background-image:url(image/back.jpg);
+	  height:100vh;
+	  }
+	  .container{
+    background-color: rgba(255, 26, 100, 0.4);
+    width: 30%;
+    height: 64%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	  }
+	  h1.heading {
+    position: absolute;
+    top: 21%;
+    color: whitesmoke;
+    font-size: xx-large;
+    font-family: fangsong;
+}
+label{
+    color: #00ff68;
+}
+	  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    padding: 1%;
+}
+    .input-group input {
+    border-radius: 5px;
+    border: 2px solid red;
+    padding: 1.5%;
+    font-size: 16px;
+}
+.input-group input:focus{
+        outline:0;
+}
+button#button {
+    padding: 4%;
+    background: rgba(255,10,100,0.5);
+    border-radius: 7%;
+    color: white;
+    font-weight: bolder;
+    border: 2px solid whitesmoke;
+    font-size: 13px;
+    width: 97%;
+    margin-top: 10%;
+	cursor:pointer;
+	}
+	.er label{
+	   color:yellow;
+	}
+	
+	.su label{
+	  color:white;
+	  }
+  
+span{
+  display:none;
+  position: absolute;
+    left: 54%;
+    top: 50%;
+  }
+.show{
+  display:block;
+  }
+@media(min-width:320px;){
+	.container{
+		width:100%;
+		height:27%;
+		 display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading{
+      margin-top:20%;
+    }
+  }
+ @media(min-width:680px;){
+    .container{
+	     width:100%;
+		 }
+
+
+
+
+} 
+@media (min-width:920px;){
+  .container{
+    background-color: rgba(255, 26, 100, 0.4);
+    width: 30%;
+    height: 64%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	  }
+	  h1.heading {
+    position: absolute;
+    top: 21%;
+    color: whitesmoke;
+    font-size: xx-large;
+    font-family: fangsong;
+}
+label{
+    color: #00ff68;
+}
+	  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    padding: 1%;
+}
+    .input-group input {
+    border-radius: 5px;
+    border: 2px solid red;
+    padding: 1.5%;
+    font-size: 16px;
+}
+.input-group input:focus{
+        outline:0;
+}
+button#button {
+    padding: 4%;
+    background: rgba(255,10,100,0.5);
+    border-radius: 7%;
+    color: white;
+    font-weight: bolder;
+    border: 2px solid whitesmoke;
+    font-size: 13px;
+    width: 97%;
+    margin-top: 10%;
+	cursor:pointer;
+	}
+
+
+
+
+}
+  
+  
+  
+  </style>
+</head>
+<body>
+       <div class="container">
+	               <h1 class="heading">Registration</h1>
+	       <form action="" id="form">
+		    <div class="input-group">
+			   <label class="lname" for="name">UserName</label>
+			   <input type="text" id="username" name="username" >
+			   <div class="error" ></div>
+			</div>
+			 <div class="input-group">
+			   <label class="lanme" for="mail">Email</label>
+			   <input type="mail" id="email">
+			   <div class="error"></div>
+			</div>
+			 <div class="input-group">
+			   <label class="lanme" for="pass">password</label>
+			   <input type="password" id="password">
+			    <span id="sp"> <i class="fa fa-eye-slash" id="icon"></i> </span>
+			   <div class="error"></div>
+			</div>
+			 <div class="input-group">
+			   <label class="lanme" for="cpass">Confirm password</label>
+			   <input type="password" id="cpassword">
+			 
+			   <div class="error"></div>
+			</div>
+			<button type="submit" id="button">Register</button>
+	       </form>
+	   </div>
+
+<script src="test.js">
+       	
+</script>
+
+</body>
+</html>
